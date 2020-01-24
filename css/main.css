@@ -1,0 +1,159 @@
+body{
+    background: #eee;
+    font-family: 'Lato', sans-serif;
+}
+#header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    text-align: center;
+    overflow: hidden;
+    width: 99%;
+    padding: 10px 0px;
+    background-color:#eee;
+}
+#header-img{
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    align-items: left;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    margin-bottom: 5px;
+}
+ul li a{
+    text-decoration: none;
+    color:#000;
+}
+.flexSection{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#forum{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#email{
+    width: 200px;
+    margin:  15px   auto;
+    padding-bottom: 5px;
+}
+#submit{
+    width: 150px;
+    margin: 0 auto;
+}
+.btn{
+    color: black;
+    font-size: 18px;
+    padding: 2px;
+    font-weight: 900;
+    border: 0;
+    background-color: #f1c40f;
+}
+
+#HowItWorks{
+    width: 80%;
+    padding: 30px;
+    margin: 0 auto;
+}
+.centerSection{
+    width: 86%;
+    margin: 0 auto;
+}
+.productBoxOne, 
+.productBoxTwo,
+ .productBoxThree{
+    text-align: center;
+    border: 1px solid black;
+    margin:10px;
+    width:280px;
+    max-width: 300px;
+}
+.prdouctTitleOne,
+.prdouctTitleTwo,
+.prdouctTitleThree{
+    text-align: center;
+    background-color: #ddd;
+    font-weight: 550;
+    padding: 10px;
+}
+.prdouctTitleOne,
+.prdouctTitleTwo,
+.prdouctTitleThree > ul {
+    list-style: none;
+    display: block;
+}
+.prdouctTitleOne,
+.prdouctTitleTwo,
+.prdouctTitleThree > ul li{
+    text-decoration: none;
+    padding: 5px;
+}
+.OlButton{
+    font-size: 15px;
+    padding: 10px;
+    color:black;
+    border: 0;
+    font-weight: 700;
+    background-color: #f1c40f;
+    margin-bottom: 20px;
+}
+.footerUl{
+    width:89%;
+    background-color: #ddd;
+    margin:  0 auto ;
+    padding: 20px;
+}
+.footerUl > ul {
+    display: flex;
+    justify-content: flex-end;
+}
+.footerUl > ul li a{
+    margin-right: 10px;
+    padding: 0;
+}
+.footerUl > p{  
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (min-width:600px){
+    #header{
+        display: flex;
+        flex-direction: row;
+    }
+    #div-img {
+        width:60%;
+        text-align: left;
+    }
+    #nav-bar{
+        width:40%;
+        
+    }
+    .ul-flex{
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-link{
+        width: 30%;
+        display: block;
+        float: right;
+    }
+    #email{
+        width: 300px;
+    }
+    #HowItWorks{
+        width: 50%;
+    }
+    .centerSection{  
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
