@@ -8,7 +8,7 @@
     <body>
         <header id="header">
             <div id="div-img">
-                <img id="header-img" src="image/original_trombones.png" title="original_trombones" alt="original_trombones">
+                <img id="header-img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" title="original_trombones" alt="original_trombones">
             </div>
             <nav id="nav-bar">
                 <ul class="ul-flex">
@@ -21,16 +21,33 @@
         <div>
             <section class="flexSection">
                 <h2>Handcrafted, home-made masterpieces</h2>
-                <form id="forum" action="https://www.freecodecamp.com/email-submit">
-                    <input type="email" id="email"  pattern=".+@globex.com" size="30"  placeholder="Enter your email here:" required>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input type="email" id="email" name="email"  pattern=".+@globex.com" size="30"  placeholder="Enter your email here:" required>
                     <input id="submit" type="submit" value="GET STARTED" class="btn">
                 </form>
             </section>
         </div>
         <section id="features" class="centerSection"> 
-            <div>
-                <div></div>
-                <div></div>
+            <div id="materials">
+                <div><img id="flame" src="./image/whatever_this_is.png"></div>
+                <div id="materialsText">
+                    <h2>Premium Materials</h2>
+                    <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase. </p>
+                </div>
+            </div>
+            <div id="shipping">
+                <div><img id="truck" src="./image/truck.png"></div>
+                <div id="shippingText">
+                    <h2>Fast Shipping</h2>
+                    <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied. </p>
+                </div>
+            </div>
+            <div id="assurance">
+                <div><img id="battery" src="./image/battery.png"></div>
+                <div id="assuranceText">
+                    <h2>Quality Assurance</h2>
+                    <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument. </p>
+                </div>
             </div>
         </section>
         <section id="HowItWorks" class="centerSection">
@@ -82,5 +99,6 @@
             <p >Copyright 2020, Original Trombones</p>
         </footer>
 
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
 </html>

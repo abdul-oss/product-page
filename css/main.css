@@ -11,6 +11,7 @@ body{
     width: 99%;
     padding: 10px 0px;
     background-color:#eee;
+    z-index: 100;
 }
 #header-img{
     width: 100%;
@@ -34,7 +35,7 @@ ul li a{
     display: flex;
     flex-direction: column;
 }
-#forum{
+#form{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -56,7 +57,44 @@ ul li a{
     border: 0;
     background-color: #f1c40f;
 }
-
+#features{
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: repeat(max-content,3);
+    grid-template-columns: repeat(max-content,2);
+    position: relative;
+}
+#materials,
+#shipping,
+#assurance {
+    display: flex;
+}
+#materialsText,
+#shippingText,
+#assuranceText{
+    flex-direction: column;
+}
+#materialsText{
+    padding-left: 23px;
+}
+#shippingText{
+    padding-left: 12px;
+}
+#flame{
+    position: relative;
+    margin-top: 30px;
+    padding-right: 20px;
+}
+#truck{
+    position: relative;
+    margin-top: 30px;
+    padding-right: 20px;
+}
+#battery{
+    position: relative;
+    margin-top: 30px;
+    padding-right: 20px;
+}
 #HowItWorks{
     width: 80%;
     padding: 30px;
@@ -142,7 +180,7 @@ ul li a{
     }
     .nav-link{
         width: 30%;
-        display: block;
+        display: inline-flex;
         float: right;
     }
     #email{
@@ -153,7 +191,7 @@ ul li a{
     }
     .centerSection{  
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
     }
 }
 
